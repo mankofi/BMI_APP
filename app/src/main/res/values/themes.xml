@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.BMIApp" parent="Theme.Material3.DayNight">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">#af989a</item>  <!-- Matches your gradient -->
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:windowBackground">@drawable/bg_gradient</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+</resources>

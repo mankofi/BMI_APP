@@ -1,0 +1,36 @@
+0206384023  0593064424
+
+		Git Bash Commands
+
+1. mkdir	create a folder
+2. cd		change directory to another directory
+3. init		initialize git on folder
+4. ls --	to list files or folders in a directory
+
+5.pwd		print current working directory
+6.ls -a		list all hidden files
+7. touch	use "touch filename.txt" to create new 			file
+8.git status 	check which files are 
+9.git pull	make pull request to update code locally 
+		on computer
+
+
+git config --global user.email "blibbo22@gmail.com"
+git config --global user.name "mankofi"
+
+*------------------------*
+Getting your project to GitHub
+1.Initialize git on the folder git init
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mankofi/new_repo.git
+git push -u origin main
+*------------------------*
+
+There's a command to delete a file
+*------------------------*
+Whenever changes are made
+
+git add .
+git commit -m "message"
+git push -u origin main
