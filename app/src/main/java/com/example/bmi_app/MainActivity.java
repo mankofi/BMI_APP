@@ -1,8 +1,8 @@
 package com.example.bmi_app;
 
 import android.os.Bundle;
-import android.os.VibrationEffect;
-import android.os.Vibrator;
+//import android.os.VibrationEffect;
+//import android.os.Vibrator;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -13,7 +13,7 @@ import com.github.anastr.speedviewlib.components.indicators.NormalIndicator;
 public class MainActivity extends AppCompatActivity {
     private EditText heightEditText, weightEditText;
     private SpeedView speedView;
-    private Vibrator vibrator;
+//    private Vibrator vibrator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         heightEditText = findViewById(R.id.heightEditText);
         weightEditText = findViewById(R.id.weightEditText);
         speedView = findViewById(R.id.speedView);
-        vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+//        vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
         setupSpeedView();
     }
@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
     public void calculateBMI(View view) {
         try {
             // Trigger haptic feedback
-            if (vibrator != null && vibrator.hasVibrator()) {
-                vibrator.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
-            }
+//            if (vibrator != null && vibrator.hasVibrator()) {
+//                vibrator.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
+//            }
 
             double height = Double.parseDouble(heightEditText.getText().toString());
             double weight = Double.parseDouble(weightEditText.getText().toString());
